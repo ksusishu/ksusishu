@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Краткое руководство</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="globals.css" />
+<link rel="stylesheet" href="styleguide.css" />
+<link rel="stylesheet" href="style.css" />
+   <style>
+        body {
+            font-family: "Arimo", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .widget {
+            max-width: 100%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .widget h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .widget p {
+            font-size: 14px;
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column; 
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+		.step-header {
+		display: flex;
+		flex-direction: row; 
+                flex-wrap: wrap;
+		align-items: center;
+		gap: 8px;
+		}
+
+        .blueTheme .step-number {
+            font-size: 0.8em;
+            color: #fff;
+            background: #24B6CD;
+            width: 2em;
+            height: 2em;
+            display: flex;
+            justify-content: center; /* Центрирует по горизонтали */
+            align-items: center;    /* Центрирует по вертикали */
+            border-radius: 50%;
+        }
+		.blueTheme .step-number.optional {
+		  display: flex;
+		justify-content: center; /* Центрирует по горизонтали */
+		align-items: center;    /* Центрирует по вертикали */
+                width: 2em;
+                height: 2em;
+                background-color: #e7f9f3;
+		border: 1px solid;
+                border-radius: 50%;
+		color: #227c9d;
+		border-color: #227c9d;
+		}
+    
+        .darkTheme .step-number {
+        font-size: 0.8em;
+		color: #fff;
+		background: #D47510;
+		width: 2em;
+		height: 2em;
+		  display: flex;
+  justify-content: center; /* Центрирует по горизонтали */
+  align-items: center;    /* Центрирует по вертикали */
+		border-radius: 50%;
+        }
+		.darkTheme .step-number.optional {
+                 display: flex;
+  justify-content: center; /* Центрирует по горизонтали */
+  align-items: center;    /* Центрирует по вертикали */
+                width: 2em;
+		height: 2em;            
+                background-color: #663B13;
+                border: 1px solid;
+                 border-radius: 50%;
+                color: #FDD09D;
+                border-color: #D47510;
+      }
+    .blueTheme .badge {
+    display: flex;
+    align-items: center; 
+    padding: 4px 8px;
+    line-height: 1;
+    background-color: #E7F9F3;
+    border-radius: 8px;
+   }
+   
+.darkTheme .badge {
+    display: flex;
+    align-items: center; 
+    padding: 0px 4px; 
+    line-height: 1;
+    background-color: #894E14;
+    border-radius: 10px;
+    max-height: 1em; /* Добавлено ограничение */
+    }
+.blueTheme .badge .text-wrapper
+{
+    font-size: 0.8em;
+    line-height: 1; /* Устранение лишнего пространства */
+    margin: 0px; /* Убедитесь, что нет внешних отступов */
+    color: #227c9d; /* Цвет текста */
+}
+.darkTheme .badge .text-wrapper {
+    font-size: 0.8em;
+    line-height: 1; /* Устранение лишнего пространства */
+    margin: 0px; /* Убедитесь, что нет внешних отступов */
+    color: #FDD09D; /* Цвет текста */
+}
+	
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content h2 {
+            font-size: 1em;
+            margin: 0px 0px 0px 8px;
+        }
+        h2 {
+            font-size: 1em;
+             margin: 0px 0px 0px 8px;
+        }
+
+        .step-content p {
+            font-size: 13px;
+            margin: 0px 0px 0px 40px;
+            opacity: 0.75;
+        }
+          
+        .step-content a {
+            display: inline-block;
+            margin: 8px  0px  0px 40px;
+            color: #0685E7;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .step-content a:hover {
+            text-decoration: underline;
+        }
+
+       .step-content a:visited {
+            color: #A1A4AC; /* Цвет ссылки после посещения */
+        }
+
+    </style>
+</head>
+<body>
+<div class="widget">
+        <h1>Начало работы на платформе ПРИИСК</h1>
+        <p>Здесь описаны шаги по созданию и гибкой настройки вашего первого проекта:</p>
+  
+	<div class="step">
+            <div class="step-header"><!-- Новый контейнер для заголовка шага -->
+				<div class="step-number">1</div>
+				<h2>Создайте нейропомощника</h2><!-- Перенос заголовка внутрь step-header -->
+			</div>
+            <div class="step-content"> 
+               <p>В разделе <strong>Нейропомощники</strong> нажмите кнопку ➕.</p>
+               <p>&#8226; Выберите подходящую модель ИИ под специфику задачи, настройте параметры модели.</p>
+               <p>&#8226; Добавьте промпт для формирования структуры, стиля и характера ответа модели.</p>
+                <a href="https://admin.testaipractice.ru/angular/#/page/agents" target='_blank'>Перейти → </a>
+            </div>
+	</div>
+		
+	<div class="step">
+		<div class="step-header"> <!-- Новый контейнер для заголовка шага -->
+			<div class="step-number optional">2</div>
+			<h2>Настройте параметры обработки перед загрузкой файла</h2>
+			<div class="badge"><p class="text-wrapper">Шаг необходим для запросов к Базе знаний</p></div>
+		</div>
+		<div class="step-content">
+			<p>В разделе <strong>Настройки</strong> укажите параметры разбиения на небольшие фрагменты (чанки).
+			</p>
+			<p>Выбор правильного размера чанка позволит нейропомощнику быстрее и более точно находить 
+		 нужную информацию.
+			</p>
+			<a href="https://admin.testaipractice.ru/angular/#/page/user_settings" target='_blank'>Перейти →</a>
+		</div>
+	</div>
+
+	<div class="step">
+		<div class="step-header">
+			<div class="step-number optional">
+            3
+			</div>
+			<h2>Загрузите файлы для создания базы знаний</h2>
+			<div class="badge">
+               <p class="text-wrapper">Шаг необходим для запросов к Базе знаний</p>
+			</div>
+		</div>
+		<div class="step-content">
+			<p>В разделе <strong>Файлы</strong> загрузите релевантные файлы (статьи, документы, данные).</p><p>В ответе будут подобраны фрагменты из файлов, точно отвечающие на ваш вопрос.</p>
+                <a href="/angular/#/page/knowledge_base_x_user_docs" target='_blank'>Перейти →</a>
+		</div>
+	</div>
+		
+	<div class="step">
+		<div class="step-header">
+			<div class="step-number optional">
+            4
+			</div>
+			<div>
+	           <h2>Создайте Базу знаний</h2>
+			</div>
+      <div class="badge">
+        <p class="text-wrapper">Шаг необходим для запросов к Базе знаний</p>
+			</div>
+		</div>
+		<div class="step-content">
+			<p>&#8226; В разделе <strong>Базы знаний</strong> по кнопке ➕ создайте базу знаний и добавьте в неё загруженные документы.</p> 
+                     <p>&#8226; В нейропомощнике укажите созданную базу знаний (вернитесь на <strong>шаг 1 </strong> — заполнение карточки нейропомощника)</p>
+                <a href="https://admin.testaipractice.ru/angular/#/page/knowledge_base" target='_blank'>Перейти →</a>
+		</div>
+	</div>
+
+
+	<div class="step">
+			<div class="step-header">
+				<div class="step-number">5</div>
+				<h2>Предоставьте доступ команде</h2>
+			</div>
+            <div class="step-content">
+                   <p>&#8226; На вкладке <strong>Роли</strong> карточки <strong>База знаний</strong> настройте доступ, назначив пользователя на роль.</p>
+                    <p>&#8226; На вкладке <strong>Роли</strong> карточки <strong>Нейропомощник</strong> настройте доступ, назначив пользователя на роль.</p>
+                <a href="https://admin.testaipractice.ru/angular/#/page/knowledge_base" target='_blank'>Перейти →</a>
+            </div>
+        </div>
+	<div class="step">
+            <div class="step-header">
+				<div class="step-number">6</div>
+				<h2>Опубликуйте чат с нейропомощником</h2>
+			</div>
+            <div class="step-content">
+                <p>&#8226; Выполните настройки публикации (вкладка <strong>Публикация</strong> в карточке <strong>Нейропомощника</strong>) — чат с нейропомощником станет доступен для диалога.</p>
+                 <p>&#8226; После публикации проекта приглашайте новых пользователей по кнопке <strong>Пригласить</strong></p>
+                <a href="https://admin.testaipractice.ru/angular/#/page/agents" target='_blank'>Перейти →</a>
+            </div>
+	</div>
+</div>
+</body>
+</html>
